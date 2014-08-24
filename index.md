@@ -67,26 +67,23 @@ head(mtcars, 3)
 ## Analysis - Conducting Regression Analysis
 
 * The t-test tests whether should we accept the regression coefficients
-* The F-test tests whether should we accept the regression equation
 
 
 ```
-## 
-## Call:
-## lm(formula = mpg ~ cyl, data = mtcars)
-## 
-## Residuals:
-##    Min     1Q Median     3Q    Max 
-## -4.981 -2.119  0.222  1.072  7.519 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(>|t|)    
-## (Intercept)   37.885      2.074   18.27  < 2e-16 ***
-## cyl           -2.876      0.322   -8.92  6.1e-10 ***
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## Residual standard error: 3.21 on 30 degrees of freedom
-## Multiple R-squared:  0.726,	Adjusted R-squared:  0.717 
-## F-statistic: 79.6 on 1 and 30 DF,  p-value: 6.11e-10
+##             Estimate Std. Error t value  Pr(>|t|)
+## (Intercept)   37.885     2.0738   18.27 8.369e-18
+## cyl           -2.876     0.3224   -8.92 6.113e-10
+```
+
+* The F-test tests whether should we accept the regression equation
+
+```
+## value numdf dendf 
+## 79.56  1.00 30.00
+```
+
+* the adjusted-r squared shows the variance of mpg explained by the cyl
+
+```
+## [1] 0.7171
 ```

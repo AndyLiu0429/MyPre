@@ -171,27 +171,26 @@ head(mtcars, 3)
   <article data-timings="">
     <ul>
 <li>The t-test tests whether should we accept the regression coefficients</li>
+</ul>
+
+<pre><code>##             Estimate Std. Error t value  Pr(&gt;|t|)
+## (Intercept)   37.885     2.0738   18.27 8.369e-18
+## cyl           -2.876     0.3224   -8.92 6.113e-10
+</code></pre>
+
+<ul>
 <li>The F-test tests whether should we accept the regression equation</li>
 </ul>
 
-<pre><code>## 
-## Call:
-## lm(formula = mpg ~ cyl, data = mtcars)
-## 
-## Residuals:
-##    Min     1Q Median     3Q    Max 
-## -4.981 -2.119  0.222  1.072  7.519 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)   37.885      2.074   18.27  &lt; 2e-16 ***
-## cyl           -2.876      0.322   -8.92  6.1e-10 ***
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Residual standard error: 3.21 on 30 degrees of freedom
-## Multiple R-squared:  0.726,  Adjusted R-squared:  0.717 
-## F-statistic: 79.6 on 1 and 30 DF,  p-value: 6.11e-10
+<pre><code>## value numdf dendf 
+## 79.56  1.00 30.00
+</code></pre>
+
+<ul>
+<li>the adjusted-r squared shows the variance of mpg explained by the cyl</li>
+</ul>
+
+<pre><code>## [1] 0.7171
 </code></pre>
 
   </article>
