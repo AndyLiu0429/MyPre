@@ -153,12 +153,9 @@ head(mtcars, 3)
     <h2>Analysis - Fitting linear regression model</h2>
   </hgroup>
   <article data-timings="">
-    <h3>The following example shows the relationship between cylindar and mpg</h3>
-
-<h3>Choose the variables by clicking on different variables&#39; names on my shinyApp</h3>
-
-<ul>
-<li>URL: <em><a href="http://swhgoon.github.io/devdataprod-cp/part2_devdataprod-slidify">http://swhgoon.github.io/devdataprod-cp/part2_devdataprod-slidify</a></em></li>
+    <ul>
+<li>The following example shows the relationship between cylindar and mpg</li>
+<li>Choose the variables by clicking on different variables&#39; names on my <a href="http://swhgoon.github.io/devdataprod-cp/part2_devdataprod-slidify">shinyApp</a></li>
 </ul>
 
 <pre><code class="r">model &lt;- lm(mpg~cyl,data=mtcars)
@@ -177,9 +174,10 @@ abline(model, col=2)
     <h2>Analysis - Conducting Regression Analysis</h2>
   </hgroup>
   <article data-timings="">
-    <h3>The t-test tests whether should we accept the regression coefficients</h3>
-
-<h3>The F-test tests whether should we accept the regression equation</h3>
+    <ul>
+<li>The t-test tests whether should we accept the regression coefficients</li>
+<li>The F-test tests whether should we accept the regression equation</li>
+</ul>
 
 <pre><code class="r">summary(model)
 </code></pre>

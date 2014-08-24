@@ -48,10 +48,9 @@ head(mtcars, 3)
 ---
 
 ## Analysis - Fitting linear regression model
-
-### The following example shows the relationship between cylindar and mpg
-### Choose the variables by clicking on different variables' names on my shinyApp
-- URL: *http://swhgoon.github.io/devdataprod-cp/part2_devdataprod-slidify*
+* The following example shows the relationship between cylindar and mpg
+* Choose the variables by clicking on different variables' names on my [shinyApp]
+(http://swhgoon.github.io/devdataprod-cp/part2_devdataprod-slidify)
 
 ```{r}
 model <- lm(mpg~cyl,data=mtcars)
@@ -63,8 +62,8 @@ abline(model, col=2)
 
 ## Analysis - Conducting Regression Analysis
 
-### The t-test tests whether should we accept the regression coefficients
-### The F-test tests whether should we accept the regression equation
+* The t-test tests whether should we accept the regression coefficients
+* The F-test tests whether should we accept the regression equation
 
 ```{r}
 summary(model)
