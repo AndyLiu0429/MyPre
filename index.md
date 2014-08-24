@@ -60,13 +60,6 @@ head(mtcars, 3)
 * Choose the variables by clicking on different variables' names on my [shinyApp]
 (http://swhgoon.github.io/devdataprod-cp/part2_devdataprod-slidify)
 
-
-```r
-model <- lm(mpg~cyl,data=mtcars)
-plot(mtcars$cyl,mtcars$mpg,xlab="Number of cylindars",ylab="mpg",main="relationship between cyl and mpg")
-abline(model, col=2)
-```
-
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
 
 ---

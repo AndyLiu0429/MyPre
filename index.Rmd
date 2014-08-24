@@ -52,7 +52,7 @@ head(mtcars, 3)
 * Choose the variables by clicking on different variables' names on my [shinyApp]
 (http://swhgoon.github.io/devdataprod-cp/part2_devdataprod-slidify)
 
-```{r}
+```{r, echo=FALSE}
 model <- lm(mpg~cyl,data=mtcars)
 plot(mtcars$cyl,mtcars$mpg,xlab="Number of cylindars",ylab="mpg",main="relationship between cyl and mpg")
 abline(model, col=2)
