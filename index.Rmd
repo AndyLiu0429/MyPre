@@ -65,6 +65,6 @@ abline(model, col=2)
 * The t-test tests whether should we accept the regression coefficients
 * The F-test tests whether should we accept the regression equation
 
-```{r}
+```{r,echo=FALSE}
 summary(model)
 ```

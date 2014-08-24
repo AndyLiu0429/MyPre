@@ -70,10 +70,6 @@ head(mtcars, 3)
 * The F-test tests whether should we accept the regression equation
 
 
-```r
-summary(model)
-```
-
 ```
 ## 
 ## Call:
