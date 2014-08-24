@@ -1,0 +1,71 @@
+---
+title       : Study the relationship between variables and MPG
+subtitle    : dataset of mtcars
+author      : AndyLiu0429
+job         : Pitch Presentation
+framework   : io2012        
+highlighter : highlight.js  
+hitheme     : tomorrow       
+widgets     : [bootstrap]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## mtcars dataset - Description
+
+### Motor Trend Car Road Tests
+
+> The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+### Source
+> Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391–411.
+
+```{r}
+library(datasets)
+head(mtcars, 3)
+```
+
+---
+
+## mtcars dataset - Format
+
+**The data contains with 32 observations on 11 variables.**
+
+| Index | Field | Detail |
+------- | ----- | ------ |
+| [, 1] | mpg | Miles/(US) gallon |
+| [, 2]  | cyl | Number of cylinders |
+| [, 3]    | disp | Displacement (cu.in.) |
+| [, 4]    | hp | Gross horsepower |
+| [, 5]    | drat | Rear axle ratio |
+| [, 6]	| wt | Weight (lb/1000) |
+| [, 7]	| qsec | 1/4 mile time |
+| [, 8]	| vs | V/S |
+| [, 9]	| am | Transmission (0 = automatic, 1 = manual) |
+| [,10]	| gear | Number of forward gears |
+| [,11]	| carb | Number of carburetors |
+
+---
+
+## Analysis - Fitting linear regression model
+
+### The following example shows the relationship between cylindar and mpg
+### Choose the variables by clicking on different variables' names on my shinyApp
+- URL: *http://swhgoon.github.io/devdataprod-cp/part2_devdataprod-slidify*
+
+```{r}
+model <- lm(mpg~cyl,data=mtcars)
+plot(mtcars$cyl,mtcars$mpg,xlab="Number of cylindars",ylab="mpg",main="relationship between cyl and mpg")
+abline(model, col=2)
+```
+
+---
+
+## Analysis - Conducting Regression Analysis
+
+### The t-test tests whether should we accept the regression coefficients
+### The F-test tests whether should we accept the regression equation
+
+```{r}
+summary(model)
+```
